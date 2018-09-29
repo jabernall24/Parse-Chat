@@ -30,6 +30,7 @@ class LogInViewController: UIViewController {
         
         if usernameTextField.text == "" || passwordTextField.text == ""{
             self.alertUser(title: "Both username and password are required", message: "Please fill both in to sign up.")
+            self.activityIndicator.stopAnimating()
             return
         }
         
